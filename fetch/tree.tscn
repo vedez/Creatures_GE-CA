@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cgm0la1xen1mt"]
 
-[ext_resource type="PackedScene" uid="uid://bgpins3nmvqy7" path="res://Models/Tree (1).glb" id="1_gvmkm"]
+[ext_resource type="PackedScene" uid="uid://bgpins3nmvqy7" path="res://Models/Tree-1.glb" id="1_gvmkm"]
 [ext_resource type="PackedScene" uid="uid://sn6fg2ikkre1" path="res://Models/Tree-2.glb" id="2_d2g23"]
 
 [node name="Tree" type="Node3D"]
