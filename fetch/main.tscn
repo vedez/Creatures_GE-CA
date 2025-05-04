@@ -14,7 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://hb500bhxpjj1" path="res://benches.tscn" id="11_yaehf"]
 [ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://flowers.tscn" id="12_074og"]
 [ext_resource type="PackedScene" uid="uid://dq7cs7ooc87j7" path="res://grass.tscn" id="13_cegan"]
-[ext_resource type="PackedScene" path="res://player.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://btgm5dfnob5ct" path="res://player.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://dfb8v7nhxifqh" path="res://ball.tscn" id="15_vivmo"]
 [ext_resource type="AudioStream" uid="uid://gxbn0iv54ykv" path="res://Sound/City Park [Sound EffectAmbience].mp3" id="15_vivmo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82xsv"]
