@@ -39,12 +39,14 @@ Fetch is a peaceful and immersive simulation game where you take a leisurely str
 | MyClass2.cs | From [reference]() |
 
 # References
-* Item 1
+* Models taken from https://poly.pizza/
 * Item 2
 
 # What I am most proud of in the assignment
 
-Each team member
+I'm most proud of the fetch mechanic and the realistic, responsive interaction between the user and the dog. The way the dog reacts to the player's actions adds a strong sense of immersion and emotional connection, making the experience feel much more lifelike.
+
+I'm also proud of how I designed the environment to closely simulate a real-life outdoor park. From the layout and lighting to the ambient sounds and natural movement of elements like grass and trees, every detail was crafted to enhance immersion and make the virtual space feel familiar and believable.
 
 # What I learned
 
