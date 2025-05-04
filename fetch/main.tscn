@@ -1,6 +1,24 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxel7xjoy4iqs"]
+[gd_scene load_steps=21 format=3 uid="uid://dxel7xjoy4iqs"]
 
 [ext_resource type="Script" uid="uid://bsgxpnhcryak1" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dq8o0yk4fd7ew" path="res://setup.tscn" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://dgw5qwr4dtwul" path="res://plane.tscn" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://csl01qfn28wln" path="res://park.tscn" id="4_272bh"]
+[ext_resource type="PackedScene" uid="uid://bxi7quymusqu0" path="res://fence.tscn" id="5_5vw27"]
+[ext_resource type="PackedScene" uid="uid://bfrdibn0exeuo" path="res://Models/Gazebo.glb" id="5_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://cgm0la1xen1mt" path="res://tree.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://c5aqydelx2edl" path="res://light.tscn" id="6_w48qg"]
+[ext_resource type="PackedScene" uid="uid://cacd4hpn37rth" path="res://Models/Pond.glb" id="9_vivmo"]
+[ext_resource type="PackedScene" uid="uid://pdk2fqpmv3uo" path="res://cloud.tscn" id="10_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://hb500bhxpjj1" path="res://benches.tscn" id="11_yaehf"]
+[ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://flowers.tscn" id="12_074og"]
+[ext_resource type="PackedScene" uid="uid://dq7cs7ooc87j7" path="res://grass.tscn" id="13_cegan"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82xsv"]
+albedo_color = Color(0.223529, 0.607843, 0.552941, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_getpj"]
+material = SubResource("StandardMaterial3D_82xsv")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -22,6 +40,45 @@ size = Vector3(0.1, 0.1, 0.1)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_ig7tw")
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="Setup" parent="Map" instance=ExtResource("2_lquwl")]
+
+[node name="Plane" parent="Map" instance=ExtResource("3_7mycd")]
+
+[node name="Park" parent="Map" instance=ExtResource("4_272bh")]
+
+[node name="Others" type="Node3D" parent="Map"]
+
+[node name="Gazebo" parent="Map/Others" instance=ExtResource("5_ycdy4")]
+transform = Transform3D(1.53838, 0, -1.27805, 0, 2, 0, 1.27805, 0, 1.53838, -39.543, 0.942222, 12.5002)
+
+[node name="Light" parent="Map/Others" instance=ExtResource("6_w48qg")]
+transform = Transform3D(3, 0, 0, 0, 3.5, 0, 0, 0, 3, 0, 0.594707, 57.9525)
+
+[node name="Fence" parent="Map/Others" instance=ExtResource("5_5vw27")]
+transform = Transform3D(1.011, 0, 0, 0, 3, 0, 0, 0, 1, -31.1, 0, -49.6)
+
+[node name="Tree" parent="Map/Others" instance=ExtResource("6_7mycd")]
+transform = Transform3D(3, 0, 0, 0, 3.5, 0, 0, 0, 3, -0.193253, 13.9877, 0.108181)
+
+[node name="Pond" parent="Map/Others" instance=ExtResource("9_vivmo")]
+transform = Transform3D(0.669879, 0, 9.97754, 0, 7, 0, -9.97754, 0, 0.669879, -35.4108, 1.6, -23.0273)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Others/Pond"]
+transform = Transform3D(1.61902, 0, 0.396453, 0, 0.01, 0, -0.518439, 0, 1.23807, 0.100668, -0.100464, 0.0237613)
+mesh = SubResource("SphereMesh_getpj")
+
+[node name="Cloud" parent="Map/Others" instance=ExtResource("10_2cqfq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 70.7184, 0)
+
+[node name="Benches" parent="Map/Others" instance=ExtResource("11_yaehf")]
+
+[node name="flowers" parent="Map/Others" instance=ExtResource("12_074og")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0724401, 0)
+
+[node name="Grass" parent="Map/Others" instance=ExtResource("13_cegan")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1bvp3")

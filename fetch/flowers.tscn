@@ -1,0 +1,163 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc2ihrpwkrp2l"]
+
+[ext_resource type="PackedScene" uid="uid://gkipwhhvnyf2" path="res://Models/Garden.glb" id="1_r5eoh"]
+[ext_resource type="PackedScene" uid="uid://b68nd17axgnvc" path="res://Models/Flower.glb" id="2_qscs3"]
+[ext_resource type="PackedScene" uid="uid://b73bqmhip1qrs" path="res://Models/Desert marigold.glb" id="3_832iv"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Garden" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 28.016, 0, 0)
+
+[node name="Garden2" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.443578, 0, -0.230735, 0, 0.5, 0, 0.230735, 0, 0.443578, 21.7151, 0, 12.1348)
+
+[node name="Garden3" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.480818, 0, -0.137164, 0, 0.5, 0, 0.137164, 0, 0.480818, 36.7779, 0, 25.7862)
+
+[node name="Garden4" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.363263, 0, -0.343569, 0, 0.5, 0, 0.343569, 0, 0.363263, 27.3898, 0, 35.727)
+
+[node name="Garden5" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -43.3439, 0, -3.972)
+
+[node name="Garden6" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -40.5105, 0, -5.19887)
+
+[node name="Garden8" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -34.6002, 0, -7.15246)
+
+[node name="Garden9" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -42.1552, 0, -39.5149)
+
+[node name="Garden11" parent="." instance=ExtResource("1_r5eoh")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -36.2449, 0, -41.4685)
+
+[node name="Flower" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.332272, -0.711352, -0.114411, 0.336298, 0.702836, -0.115797, 0.162784, 0, 0.472759, 0, 1.17575, 0)
+
+[node name="Flower2" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.332272, -0.711352, -0.114411, 0.336298, 0.702836, -0.115797, 0.162784, 0, 0.472759, 11.9811, 1.17575, -27.2283)
+
+[node name="Flower3" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.332272, -0.711352, -0.114411, 0.336298, 0.702836, -0.115797, 0.162784, 0, 0.472759, -22.5284, 1.17575, 2.99006)
+
+[node name="Flower4" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.332272, -0.711352, -0.114411, 0.336298, 0.702836, -0.115797, 0.162784, 0, 0.472759, -21.4095, 1.17575, -37.9214)
+
+[node name="Flower5" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, -40.4176, 1.17575, 37.9857)
+
+[node name="Flower6" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, -11.1081, 1.17575, 43.073)
+
+[node name="Flower7" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, -48.7335, 1.17575, 16.836)
+
+[node name="Flower8" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, -8.75185, 1.17575, 8.09121)
+
+[node name="Flower9" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, -27.7687, 1.17575, 26.6166)
+
+[node name="Flower10" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, 1.54083, 1.17575, 31.7038)
+
+[node name="Flower11" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, -36.0846, 1.17575, 5.46679)
+
+[node name="Flower12" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.0781708, -0.170935, -0.4864, 0.336298, 0.702836, -0.115797, 0.361653, -0.690509, 0.00254381, 3.89706, 1.17575, -3.27794)
+
+[node name="Flower13" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.185512, 0.591067, 0.358113, 0.336298, 0.702836, -0.115797, -0.320139, 0.395804, -0.329159, -17.3849, 1.17575, 20.2121)
+
+[node name="Flower14" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.266181, -0.242176, 0.405568, 0.336298, 0.702836, -0.115797, -0.257005, 0.668859, 0.268525, 29.3078, 1.17575, -32.2834)
+
+[node name="Flower15" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.367428, -0.597487, 0.160465, 0.336298, 0.702836, -0.115797, -0.0435935, 0.386044, 0.459175, -17.2195, 1.17575, -13.2536)
+
+[node name="Flower16" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.266181, -0.242176, 0.405568, 0.336298, 0.702836, -0.115797, -0.257005, 0.668859, 0.268525, 35.7865, 1.17575, -10.0828)
+
+[node name="Flower17" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.266181, -0.242176, 0.405568, 0.336298, 0.702836, -0.115797, -0.257005, 0.668859, 0.268525, -2.30024, 1.17575, -25.063)
+
+[node name="Flower18" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.266181, -0.242176, 0.405568, 0.336298, 0.702836, -0.115797, -0.257005, 0.668859, 0.268525, 23.8087, 1.17575, -29.8746)
+
+[node name="Flower19" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.367428, -0.597487, 0.160465, 0.336298, 0.702836, -0.115797, -0.0435935, 0.386044, 0.459175, -32.082, 1.17575, -21.5215)
+
+[node name="Desert marigold" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.172038, 0, -0.101995, 0, 0.2, 0, 0.101995, 0, 0.172038, -0.940695, 0.599159, 8.44976)
+
+[node name="Desert marigold2" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.172038, 0, -0.101995, 0, 0.2, 0, 0.101995, 0, 0.172038, -12.5161, 0.599159, 1.58714)
+
+[node name="Desert marigold3" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.131546, 0, 0.150651, 0, 0.2, 0, -0.150651, 0, 0.131546, -2.30293, 0.599159, 22.7794)
+
+[node name="Desert marigold4" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.131546, 0, 0.150651, 0, 0.2, 0, -0.150651, 0, 0.131546, -11.1539, 0.599159, 32.9158)
+
+[node name="Desert marigold5" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.169192, 0, 0.106649, 0, 0.2, 0, -0.106649, 0, -0.169192, -38.795, 0.599159, 30.3069)
+
+[node name="Desert marigold6" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.169192, 0, 0.106649, 0, 0.2, 0, -0.106649, 0, -0.169192, -27.411, 0.599159, 37.4827)
+
+[node name="Desert marigold7" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.135606, 0, -0.147007, 0, 0.2, 0, 0.147007, 0, -0.135606, -37.0424, 0.599159, 16.0197)
+
+[node name="Desert marigold8" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.135606, 0, -0.147007, 0, 0.2, 0, 0.147007, 0, -0.135606, -27.9183, 0.599159, 6.12847)
+
+[node name="Desert marigold9" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.107472, 0, -0.168671, 0, 0.2, 0, 0.168671, 0, 0.107472, 13.6685, 0.599159, -20.6527)
+
+[node name="Desert marigold10" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.107472, 0, -0.168671, 0, 0.2, 0, 0.168671, 0, 0.107472, 6.43733, 0.599159, -32.0015)
+
+[node name="Desert marigold11" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.185386, 0, 0.0750475, 0, 0.2, 0, -0.0750475, 0, 0.185386, -3.47902, 0.599159, -13.5065)
+
+[node name="Desert marigold12" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.185386, 0, 0.0750475, 0, 0.2, 0, -0.0750475, 0, 0.185386, -6.48911, 0.599159, -3.43147)
+
+[node name="Desert marigold13" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.102831, 0, 0.171539, 0, 0.2, 0, -0.171539, 0, -0.102831, -29.9761, 0.599159, -18.2369)
+
+[node name="Desert marigold14" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.102831, 0, 0.171539, 0, 0.2, 0, -0.171539, 0, -0.102831, -23.0571, 0.599159, -6.69499)
+
+[node name="Desert marigold15" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.187364, 0, -0.069963, 0, 0.2, 0, 0.069963, 0, -0.187364, -21.9629, 0.599159, -30.1945)
+
+[node name="Desert marigold16" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.187364, 0, -0.069963, 0, 0.2, 0, 0.069963, 0, -0.187364, -9.35624, 0.599159, -34.9019)
+
+[node name="Desert marigold17" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.115492, 0, -0.163284, 0, 0.2, 0, 0.163284, 0, 0.115492, 11.1297, 0.599159, 8.22146)
+
+[node name="Desert marigold18" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.143445, 0, 0.139368, 0, 0.2, 0, -0.139368, 0, 0.143445, 20.1655, 0.599159, -18.031)
+
+[node name="Desert marigold19" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.143445, 0, 0.139368, 0, 0.2, 0, -0.139368, 0, 0.143445, 8.71105, 0.599159, -9.62699)
+
+[node name="Desert marigold20" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(-0.110995, 0, 0.166373, 0, 0.2, 0, -0.166373, 0, -0.110995, 33.6399, 0.599159, -12.9678)
+
+[node name="Flower20" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(0.0957504, 0.136987, 0.485943, 0.336298, 0.702836, -0.115797, -0.357401, 0.698037, 0.0212282, 12.0483, 1.17575, 28.3708)
+
+[node name="Flower21" parent="." instance=ExtResource("2_qscs3")]
+transform = Transform3D(-0.303454, 0.702976, 0.185397, 0.336298, 0.702836, -0.115797, -0.211706, 0.108839, -0.449688, 16.9233, 1.17575, 41.9678)
+
+[node name="Desert marigold21" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.144818, 0, 0.137942, 0, 0.2, 0, -0.137942, 0, 0.144818, 18.1759, 0.599159, 25.4487)
+
+[node name="Desert marigold22" parent="." instance=ExtResource("3_832iv")]
+transform = Transform3D(0.144818, 0, 0.137942, 0, 0.2, 0, -0.137942, 0, 0.144818, 8.43194, 0.599159, 34.73)

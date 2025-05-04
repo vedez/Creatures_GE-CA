@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://csl01qfn28wln"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vw27"]
+albedo_color = Color(0.0980392, 0.360784, 0.133333, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kek77"]
+material = SubResource("StandardMaterial3D_5vw27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c57u"]
+albedo_color = Color(0.260465, 0.281735, 0.292355, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_efxa6"]
+material = SubResource("StandardMaterial3D_4c57u")
+
+[node name="Park" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, 0, 0.654405, 0)
+mesh = SubResource("BoxMesh_kek77")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(120, 0, 0, 0, 0.6, 0, 0, 0, 120, 0, 0.320309, 0)
+mesh = SubResource("BoxMesh_efxa6")
