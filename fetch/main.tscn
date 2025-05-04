@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dxel7xjoy4iqs"]
+[gd_scene load_steps=23 format=3 uid="uid://dxel7xjoy4iqs"]
 
 [ext_resource type="Script" uid="uid://bsgxpnhcryak1" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://dq8o0yk4fd7ew" path="res://setup.tscn" id="2_lquwl"]
@@ -14,8 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://hb500bhxpjj1" path="res://benches.tscn" id="11_yaehf"]
 [ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://flowers.tscn" id="12_074og"]
 [ext_resource type="PackedScene" uid="uid://dq7cs7ooc87j7" path="res://grass.tscn" id="13_cegan"]
-[ext_resource type="PackedScene" path="res://player.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://btgm5dfnob5ct" path="res://player.tscn" id="14_w48qg"]
 [ext_resource type="AudioStream" uid="uid://gxbn0iv54ykv" path="res://Sound/City Park [Sound EffectAmbience].mp3" id="15_vivmo"]
+[ext_resource type="PackedScene" uid="uid://dfb8v7nhxifqh" path="res://ball.tscn" id="17_yaehf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82xsv"]
 albedo_color = Color(0.223529, 0.607843, 0.552941, 1)
@@ -43,7 +44,6 @@ script = ExtResource("1_ig7tw")
 [node name="Map" type="Node3D" parent="."]
 
 [node name="Setup" parent="Map" instance=ExtResource("2_lquwl")]
-transform = Transform3D(500, 0, 0, 0, 0.5, 0, 0, 0, 500, 0.624946, -6.48591, 9.48393)
 
 [node name="Plane" parent="Map" instance=ExtResource("3_7mycd")]
 
@@ -93,3 +93,6 @@ shadow_enabled = true
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("15_vivmo")
 autoplay = true
+
+[node name="Ball" parent="." instance=ExtResource("17_yaehf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.492057, 3.29997, -1.5954)

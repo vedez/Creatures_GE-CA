@@ -1,4 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://csl01qfn28wln"]
+[gd_scene load_steps=7 format=3 uid="uid://csl01qfn28wln"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ogds0"]
+friction = 5.0
+rough = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vw27"]
 albedo_color = Color(0.0980392, 0.360784, 0.133333, 1)
@@ -12,12 +16,20 @@ albedo_color = Color(0.260465, 0.281735, 0.292355, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_efxa6"]
 material = SubResource("StandardMaterial3D_4c57u")
 
-[node name="Park" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_ogds0"]
+size = Vector3(100, 0.8, 100)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Park" type="StaticBody3D"]
+physics_material_override = SubResource("PhysicsMaterial_ogds0")
+
+[node name="grass" type="MeshInstance3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, 0, 0.654405, 0)
 mesh = SubResource("BoxMesh_kek77")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+[node name="road" type="MeshInstance3D" parent="."]
 transform = Transform3D(120, 0, 0, 0, 0.6, 0, 0, 0, 120, 0, 0.320309, 0)
 mesh = SubResource("BoxMesh_efxa6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.489437, 0)
+shape = SubResource("BoxShape3D_ogds0")
