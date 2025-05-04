@@ -81,13 +81,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0724401, 0)
 
 [node name="Grass" parent="Map/Others" instance=ExtResource("13_cegan")]
 
-[node name="Node3D" type="Node3D" parent="Map/Others"]
+[node name="Cars" type="Node3D" parent="Map/Others"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0419731, -0.0868797, -0.00762939)
 
-[node name="Car2" parent="Map/Others/Node3D" instance=ExtResource("15_cegan")]
+[node name="Car2" parent="Map/Others/Cars" instance=ExtResource("15_cegan")]
 transform = Transform3D(-4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, 51.8426, 0.0868797, -69.8483)
 
-[node name="Red Car" parent="Map/Others/Node3D" instance=ExtResource("16_82xsv")]
+[node name="Red Car" parent="Map/Others/Cars" instance=ExtResource("16_82xsv")]
 transform = Transform3D(5, 0, 0, 0, 6, 0, 0, 0, 5, -70.2398, 1.54345, -12.6045)
 
 [node name="Trees" type="Node" parent="Map/Others"]
