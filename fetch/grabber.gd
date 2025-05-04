@@ -10,7 +10,7 @@ var last_rotation: Basis
 var angular_velocity: Vector3
 
 var trigger_value := 0.0
-const THROW_FORCE := 2.5
+const THROW_FORCE := 1.0
 const ANIM_NAME := "Action"
 const ANIM_DURATION := 1.0
 const GRAB_THRESHOLD := 0.95  # Trigger must be mostly pressed to grab
