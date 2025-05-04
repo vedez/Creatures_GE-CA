@@ -65,6 +65,15 @@ func release():
 	remove_child(held_object)
 	get_tree().get_current_scene().add_child(held_object)
 	held_object.global_transform = obj_transform
-	held_object.linear_velocity = linear_velocity * THROW_FORCE
+
+	var throw_velocity = linear_velocity * THROW_FORCE
+	var max_speed = 20.0
+
+	if throw_velocity.length() > max_speed:
+		throw_velocity = throw_velocity.normalized() * max_speed
+
+	held_object.linear_velocity = throw_velocity
+
 	held_object.angular_velocity = angular_velocity
+
 	held_object = null
