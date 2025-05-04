@@ -16,6 +16,11 @@ Github: https://github.com/vedez/Fetch
 Fetch is a peaceful and immersive simulation game where you take a leisurely stroll through a scenic park with your loyal dog. Enjoy the simple joy of throwing a stick or ball and watching your dog eagerly chase after it. Along the way, take time to explore the environment, sit by the water, watch birds flutter by, or just soak in the calming atmosphere. This game is about finding happiness in small, everyday moments—just like in real life.
 
 # Screenshots
+## Park
+![Sitting Area](image.png)
+![Gazebo and Pond](image-1.png)
+![Sky](image-2.png)
+
 
 # Instructions 
 
