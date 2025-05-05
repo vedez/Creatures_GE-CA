@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dxel7xjoy4iqs"]
+[gd_scene load_steps=32 format=3 uid="uid://dxel7xjoy4iqs"]
 
 [ext_resource type="Script" uid="uid://bsgxpnhcryak1" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://dq8o0yk4fd7ew" path="res://setup.tscn" id="2_lquwl"]
@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bxi7quymusqu0" path="res://fence.tscn" id="5_5vw27"]
 [ext_resource type="PackedScene" uid="uid://bfrdibn0exeuo" path="res://Models/Gazebo.glb" id="5_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://c5aqydelx2edl" path="res://light.tscn" id="6_w48qg"]
-[ext_resource type="PackedScene" uid="uid://cacd4hpn37rth" path="res://Models/Pond.glb" id="9_vivmo"]
+[ext_resource type="PackedScene" uid="uid://mvbc0tdoaqpf" path="res://pond.tscn" id="8_getpj"]
 [ext_resource type="PackedScene" uid="uid://pdk2fqpmv3uo" path="res://cloud.tscn" id="10_2cqfq"]
 [ext_resource type="Script" uid="uid://b67m2uinjhi7i" path="res://cloud.gd" id="11_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://flowers.tscn" id="12_074og"]
@@ -16,19 +16,13 @@
 [ext_resource type="PackedScene" uid="uid://xd3knd4x2hm8" path="res://Models/Car.glb" id="15_cegan"]
 [ext_resource type="AudioStream" uid="uid://gxbn0iv54ykv" path="res://Sound/City Park [Sound EffectAmbience].mp3" id="15_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dmur27y5f5yb2" path="res://Models/Red Car.glb" id="16_82xsv"]
-[ext_resource type="PackedScene" path="res://ball.tscn" id="17_yaehf"]
+[ext_resource type="PackedScene" uid="uid://dfb8v7nhxifqh" path="res://ball.tscn" id="17_yaehf"]
 [ext_resource type="PackedScene" uid="uid://peks2gh6i8nw" path="res://bench.tscn" id="18_getpj"]
-[ext_resource type="PackedScene" path="res://tree-1.tscn" id="20_getpj"]
-[ext_resource type="Script" uid="uid://koe41pjf4v50" path="res://bees.gd" id="21_getpj"]
-[ext_resource type="PackedScene" path="res://tree-2.tscn" id="21_ryguw"]
+[ext_resource type="PackedScene" uid="uid://hd80btteeoai" path="res://tree-1.tscn" id="20_getpj"]
+[ext_resource type="Script" path="res://bees.gd" id="21_getpj"]
+[ext_resource type="PackedScene" uid="uid://d03h05pebd1fd" path="res://tree-2.tscn" id="21_ryguw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_cegan"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82xsv"]
-albedo_color = Color(0.223529, 0.607843, 0.552941, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_getpj"]
-material = SubResource("StandardMaterial3D_82xsv")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_top_color = Color(0.247972, 0.371026, 0.948518, 1)
@@ -96,12 +90,8 @@ transform = Transform3D(3, 0, 0, 0, 3.5, 0, 0, 0, 3, 0, 0.594707, 57.9525)
 [node name="Fence" parent="Map/Environment" instance=ExtResource("5_5vw27")]
 transform = Transform3D(1.011, 0, 0, 0, 3, 0, 0, 0, 1, -31.1, 0, -49.6)
 
-[node name="Pond" parent="Map/Environment" instance=ExtResource("9_vivmo")]
-transform = Transform3D(0.669879, 0, 9.97754, 0, 7, 0, -9.97754, 0, 0.669879, -35.4108, 1.6, -23.0273)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Environment/Pond"]
-transform = Transform3D(1.61902, 0, 0.396453, 0, 0.01, 0, -0.518439, 0, 1.23807, 0.100668, -0.100464, 0.0237613)
-mesh = SubResource("SphereMesh_getpj")
+[node name="Pond" parent="Map/Environment" instance=ExtResource("8_getpj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.6184, 1.67429, -21.51)
 
 [node name="Cloud" parent="Map/Environment" instance=ExtResource("10_2cqfq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 70.7184, 0)

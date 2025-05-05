@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://mvbc0tdoaqpf"]
+
+[ext_resource type="PackedScene" uid="uid://cacd4hpn37rth" path="res://Models/Pond.glb" id="1_micnc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82xsv"]
+albedo_color = Color(0.223529, 0.607843, 0.552941, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_getpj"]
+material = SubResource("StandardMaterial3D_82xsv")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_micnc"]
+radius = 12.999
+
+[node name="Pond" type="StaticBody3D"]
+
+[node name="Pond" parent="." instance=ExtResource("1_micnc")]
+transform = Transform3D(0.669879, 0, 9.97754, 0, 7, 0, -9.97754, 0, 0.669879, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Pond"]
+transform = Transform3D(1.61902, 0, 0.396453, 0, 0.01, 0, -0.518439, 0, 1.23807, 0.100668, -0.100464, 0.0237613)
+mesh = SubResource("SphereMesh_getpj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.8998, -0.76145)
+shape = SubResource("SphereShape3D_micnc")
