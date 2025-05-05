@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://cacd4hpn37rth" path="res://Models/Pond.glb" id="9_vivmo"]
 [ext_resource type="PackedScene" uid="uid://pdk2fqpmv3uo" path="res://cloud.tscn" id="10_2cqfq"]
 [ext_resource type="Script" uid="uid://b67m2uinjhi7i" path="res://cloud.gd" id="11_2cqfq"]
-[ext_resource type="PackedScene" uid="uid://hb500bhxpjj1" path="res://benches.tscn" id="11_yaehf"]
 [ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://flowers.tscn" id="12_074og"]
 [ext_resource type="PackedScene" uid="uid://dq7cs7ooc87j7" path="res://grass.tscn" id="13_cegan"]
 [ext_resource type="PackedScene" uid="uid://b4de0gcgvod6" path="res://player.tscn" id="14_w48qg"]
@@ -18,6 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://gxbn0iv54ykv" path="res://Sound/City Park [Sound EffectAmbience].mp3" id="15_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dmur27y5f5yb2" path="res://Models/Red Car.glb" id="16_82xsv"]
 [ext_resource type="PackedScene" path="res://ball.tscn" id="17_yaehf"]
+[ext_resource type="PackedScene" uid="uid://peks2gh6i8nw" path="res://bench.tscn" id="18_getpj"]
 [ext_resource type="PackedScene" path="res://tree-1.tscn" id="20_getpj"]
 [ext_resource type="PackedScene" uid="uid://b1ku0ttcniej" path="res://bees.tscn" id="21_d13ii"]
 [ext_resource type="PackedScene" path="res://tree-2.tscn" id="21_ryguw"]
@@ -88,8 +88,6 @@ mesh = SubResource("SphereMesh_getpj")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 70.7184, 0)
 script = ExtResource("11_2cqfq")
 
-[node name="Benches" parent="Map/Environment" instance=ExtResource("11_yaehf")]
-
 [node name="flowers" parent="Map/Environment" instance=ExtResource("12_074og")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0724401, 0)
 
@@ -147,6 +145,50 @@ transform = Transform3D(-0.968544, 0, 0.248842, 0, 1, 0, -0.248842, 0, -0.968544
 
 [node name="Tree14" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
 transform = Transform3D(-0.567959, 0, -0.823057, 0, 1, 0, 0.823057, 0, -0.567959, 47.1446, 12.6196, 15.329)
+
+[node name="Benches" type="Node" parent="Map/Environment"]
+
+[node name="Bench" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7015, 1.94398, 23.7712)
+
+[node name="Bench2" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(-0.999999, 0, 0.00164071, 0, 1, 0, -0.00164071, 0, -0.999999, 16.4137, 1.96405, 28.0527)
+
+[node name="Bench3" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.722545, 0, 0.691324, 0, 1, 0, -0.691324, 0, 0.722545, 20.6663, 1.94398, 10.3251)
+
+[node name="Bench4" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.722545, 0, 0.691324, 0, 1, 0, -0.691324, 0, 0.722545, 23.4784, 1.94398, 13.487)
+
+[node name="Bench5" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.866766, 0, -0.498715, 0, 1, 0, 0.498715, 0, 0.866766, 35.0505, 1.94398, 15.5608)
+
+[node name="Bench6" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(-0.384553, 0, -0.923103, 0, 1, 0, 0.923103, 0, -0.384553, 35.8223, 1.94398, 26.5624)
+
+[node name="Bench7" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.0884422, 0, -0.996081, 0, 1, 0, 0.996081, 0, 0.0884422, 44.8809, 1.94398, 21.4253)
+
+[node name="Bench8" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(-0.83907, 0, -0.544024, 0, 1, 0, 0.544024, 0, -0.83907, 41.4191, 1.94398, 41.6356)
+
+[node name="Bench9" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(-0.129557, 0, 0.991572, 0, 1, 0, -0.991572, 0, -0.129557, 29.3214, 1.94398, 36.134)
+
+[node name="Bench10" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.413089, 0, 0.910691, 0, 1, 0, -0.910691, 0, 0.413089, 20.4019, 1.94398, 36.3487)
+
+[node name="Bench11" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.373895, 0, 0.927471, 0, 1, 0, -0.927471, 0, 0.373895, 42.0798, 1.94398, 8.43171)
+
+[node name="Bench12" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.373895, 0, 0.927471, 0, 1, 0, -0.927471, 0, 0.373895, 38.2488, 1.94398, 6.57185)
+
+[node name="Bench13" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.337457, 0, 0.941341, 0, 1, 0, -0.941341, 0, 0.337457, 27.6688, 1.94398, 0.0343313)
+
+[node name="Bench14" parent="Map/Environment/Benches" instance=ExtResource("18_getpj")]
+transform = Transform3D(0.785317, 0, 0.619094, 0, 1, 0, -0.619094, 0, 0.785317, 19.4508, 1.94398, -3.70441)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1bvp3")
