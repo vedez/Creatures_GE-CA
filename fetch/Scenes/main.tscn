@@ -109,7 +109,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.6184, 1.67429, -21.51)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 70.7184, 0)
 script = ExtResource("11_2cqfq")
 
-[node name="flowers" parent="Map/Environment" instance=ExtResource("12_074og")]
+[node name="Flowers" parent="Map/Environment" instance=ExtResource("12_074og")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0724401, 0)
 
 [node name="Grass" parent="Map/Environment" instance=ExtResource("13_cegan")]

@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
 XRToolsRumbleManager="*res://addons/godot-xr-tools/rumble/rumble_manager.gd"
+FlowerManager="*res://scripts/flower_manager.gd"
+Global="*res://scripts/global.gd"
 
 [editor_plugins]
 
