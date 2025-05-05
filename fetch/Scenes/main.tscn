@@ -1,26 +1,29 @@
-[gd_scene load_steps=32 format=3 uid="uid://dxel7xjoy4iqs"]
+[gd_scene load_steps=39 format=3 uid="uid://dxel7xjoy4iqs"]
 
 [ext_resource type="Script" uid="uid://bsgxpnhcryak1" path="res://scripts/main.gd" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://dq8o0yk4fd7ew" path="res://scenes/setup.tscn" id="2_lquwl"]
-[ext_resource type="PackedScene" uid="uid://dgw5qwr4dtwul" path="res://scenes/plane.tscn" id="3_7mycd"]
-[ext_resource type="PackedScene" uid="uid://bxi7quymusqu0" path="res://scenes/fence.tscn" id="5_5vw27"]
+[ext_resource type="PackedScene" uid="uid://dq8o0yk4fd7ew" path="res://Scenes/setup.tscn" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://dgw5qwr4dtwul" path="res://Scenes/plane.tscn" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bxi7quymusqu0" path="res://Scenes/fence.tscn" id="5_5vw27"]
 [ext_resource type="PackedScene" uid="uid://bfrdibn0exeuo" path="res://assets/models/Gazebo.glb" id="5_ycdy4"]
-[ext_resource type="PackedScene" uid="uid://c5aqydelx2edl" path="res://scenes/light.tscn" id="6_w48qg"]
-[ext_resource type="PackedScene" uid="uid://mvbc0tdoaqpf" path="res://scenes/pond.tscn" id="8_getpj"]
-[ext_resource type="PackedScene" uid="uid://pdk2fqpmv3uo" path="res://scenes/cloud.tscn" id="10_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://c5aqydelx2edl" path="res://Scenes/light.tscn" id="6_w48qg"]
+[ext_resource type="PackedScene" uid="uid://mvbc0tdoaqpf" path="res://Scenes/pond.tscn" id="8_getpj"]
+[ext_resource type="PackedScene" uid="uid://pdk2fqpmv3uo" path="res://Scenes/cloud.tscn" id="10_2cqfq"]
 [ext_resource type="Script" uid="uid://b67m2uinjhi7i" path="res://scripts/cloud.gd" id="11_2cqfq"]
-[ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://scenes/flowers.tscn" id="12_074og"]
-[ext_resource type="PackedScene" uid="uid://dq7cs7ooc87j7" path="res://scenes/grass.tscn" id="13_cegan"]
-[ext_resource type="PackedScene" uid="uid://b4de0gcgvod6" path="res://scenes/player.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://Scenes/flowers.tscn" id="12_074og"]
+[ext_resource type="PackedScene" uid="uid://dq7cs7ooc87j7" path="res://Scenes/grass.tscn" id="13_cegan"]
+[ext_resource type="PackedScene" uid="uid://b4de0gcgvod6" path="res://Scenes/player.tscn" id="14_w48qg"]
 [ext_resource type="PackedScene" uid="uid://xd3knd4x2hm8" path="res://assets/models/Car.glb" id="15_cegan"]
 [ext_resource type="AudioStream" uid="uid://gxbn0iv54ykv" path="res://assets/sounds/City Park [Sound EffectAmbience].mp3" id="15_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dmur27y5f5yb2" path="res://assets/models/Red Car.glb" id="16_82xsv"]
-[ext_resource type="PackedScene" uid="uid://dfb8v7nhxifqh" path="res://scenes/ball.tscn" id="17_yaehf"]
-[ext_resource type="PackedScene" uid="uid://peks2gh6i8nw" path="res://scenes/bench.tscn" id="18_getpj"]
-[ext_resource type="PackedScene" uid="uid://hd80btteeoai" path="res://scenes/tree-1.tscn" id="20_getpj"]
-[ext_resource type="PackedScene" uid="uid://b1ku0ttcniej" path="res://scenes/bees.tscn" id="21_d13ii"]
-[ext_resource type="PackedScene" uid="uid://d03h05pebd1fd" path="res://scenes/tree-2.tscn" id="21_ryguw"]
+[ext_resource type="PackedScene" uid="uid://dfb8v7nhxifqh" path="res://Scenes/ball.tscn" id="17_yaehf"]
+[ext_resource type="PackedScene" uid="uid://peks2gh6i8nw" path="res://Scenes/bench.tscn" id="18_getpj"]
+[ext_resource type="PackedScene" uid="uid://hd80btteeoai" path="res://Scenes/tree-1.tscn" id="20_getpj"]
+[ext_resource type="PackedScene" uid="uid://b1ku0ttcniej" path="res://Scenes/bees.tscn" id="21_d13ii"]
+[ext_resource type="PackedScene" uid="uid://d03h05pebd1fd" path="res://Scenes/tree-2.tscn" id="21_ryguw"]
 [ext_resource type="Script" uid="uid://dixqrxhos6ero" path="res://scripts/bee_spawner.gd" id="22_1u8w0"]
+[ext_resource type="Script" uid="uid://crg3cmyxiahta" path="res://Scenes/butterflu.gd" id="22_ee4r6"]
+[ext_resource type="Script" uid="uid://bcniob7vd20mf" path="res://Scenes/butterfly_spawner.gd" id="23_gt3je"]
+[ext_resource type="PackedScene" uid="uid://d2gsejdin176w" path="res://Scenes/butterflu.tscn" id="24_3pmx8"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ogds0"]
 friction = 5.0
@@ -56,6 +59,19 @@ sky_material = SubResource("ProceduralSkyMaterial_0xm2m")
 background_mode = 2
 sky = SubResource("Sky_h2yge")
 tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gt3je"]
+albedo_color = Color(0.435294, 0.337255, 0.254902, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3pmx8"]
+material = SubResource("StandardMaterial3D_gt3je")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u50mg"]
+transparency = 1
+albedo_color = Color(1, 0.152941, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cbgmd"]
+material = SubResource("StandardMaterial3D_u50mg")
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_ig7tw")
@@ -230,3 +246,38 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.492057, 3.29997, -1.5954)
 [node name="BeeSpawner" type="Node3D" parent="."]
 script = ExtResource("22_1u8w0")
 bee_scene = ExtResource("21_d13ii")
+
+[node name="butterflu" type="Node3D" parent="."]
+script = ExtResource("22_ee4r6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="butterflu"]
+transform = Transform3D(5.73206e-16, 4.37114e-08, 0.3, 0.3, -4.37114e-08, 0, 1.31134e-08, 1, -1.31134e-08, 0, 2.63943, 2.66941)
+mesh = SubResource("CapsuleMesh_3pmx8")
+
+[node name="left" type="Node" parent="butterflu"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="butterflu/left"]
+transform = Transform3D(1.4168e-09, 0.583428, -0.532998, 0.05, -3.93403e-08, -3.27745e-16, -1.66415e-09, -0.685283, -0.453777, 0.420348, 2.63943, 2.3015)
+mesh = SubResource("BoxMesh_cbgmd")
+skeleton = NodePath("../../MeshInstance3D")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="butterflu/left"]
+transform = Transform3D(-1.61839e-09, -0.666439, -0.470449, 0.05, -3.93402e-08, -1.17348e-14, -1.46885e-09, -0.604863, 0.518342, 0.420348, 2.63943, 3.02537)
+mesh = SubResource("BoxMesh_cbgmd")
+skeleton = NodePath("../../MeshInstance3D")
+
+[node name="right" type="Node" parent="butterflu"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="butterflu/right"]
+transform = Transform3D(-1.1808e-09, -0.486243, 0.589044, 0.05, -3.93403e-08, -4.64816e-15, 1.83914e-09, 0.757343, 0.378189, -0.397528, 2.63943, 3.0221)
+mesh = SubResource("BoxMesh_cbgmd")
+skeleton = NodePath("../../MeshInstance3D")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="butterflu/right"]
+transform = Transform3D(1.80077e-09, 0.741544, 0.396676, 0.05, -3.93402e-08, -1.37422e-14, 1.23852e-09, 0.510012, -0.576757, -0.494616, 2.63943, 2.30477)
+mesh = SubResource("BoxMesh_cbgmd")
+skeleton = NodePath("../../MeshInstance3D")
+
+[node name="ButterflySpawner" type="Node3D" parent="."]
+script = ExtResource("23_gt3je")
+butterfly_scene = ExtResource("24_3pmx8")
