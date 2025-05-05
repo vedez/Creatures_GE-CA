@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dxel7xjoy4iqs"]
+[gd_scene load_steps=29 format=3 uid="uid://dxel7xjoy4iqs"]
 
 [ext_resource type="Script" uid="uid://bsgxpnhcryak1" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://dq8o0yk4fd7ew" path="res://setup.tscn" id="2_lquwl"]
@@ -13,14 +13,15 @@
 [ext_resource type="PackedScene" uid="uid://hb500bhxpjj1" path="res://benches.tscn" id="11_yaehf"]
 [ext_resource type="PackedScene" uid="uid://cc2ihrpwkrp2l" path="res://flowers.tscn" id="12_074og"]
 [ext_resource type="PackedScene" uid="uid://dq7cs7ooc87j7" path="res://grass.tscn" id="13_cegan"]
-[ext_resource type="PackedScene" path="res://player.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://b4de0gcgvod6" path="res://player.tscn" id="14_w48qg"]
 [ext_resource type="PackedScene" uid="uid://xd3knd4x2hm8" path="res://Models/Car.glb" id="15_cegan"]
 [ext_resource type="AudioStream" uid="uid://gxbn0iv54ykv" path="res://Sound/City Park [Sound EffectAmbience].mp3" id="15_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dmur27y5f5yb2" path="res://Models/Red Car.glb" id="16_82xsv"]
 [ext_resource type="PackedScene" path="res://ball.tscn" id="17_yaehf"]
 [ext_resource type="PackedScene" path="res://tree-1.tscn" id="20_getpj"]
-[ext_resource type="Script" uid="uid://koe41pjf4v50" path="res://bees.gd" id="21_getpj"]
+[ext_resource type="PackedScene" uid="uid://b1ku0ttcniej" path="res://bees.tscn" id="21_d13ii"]
 [ext_resource type="PackedScene" path="res://tree-2.tscn" id="21_ryguw"]
+[ext_resource type="Script" uid="uid://dixqrxhos6ero" path="res://bee_spawner.gd" id="22_1u8w0"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_cegan"]
 
@@ -43,26 +44,6 @@ sky_material = SubResource("ProceduralSkyMaterial_0xm2m")
 background_mode = 2
 sky = SubResource("Sky_h2yge")
 tonemap_mode = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_getpj"]
-transparency = 1
-blend_mode = 1
-albedo_color = Color(1, 0.870588, 0.819608, 0.764706)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ryguw"]
-material = SubResource("StandardMaterial3D_getpj")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cegan"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_82xsv"]
-material = SubResource("StandardMaterial3D_cegan")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ryguw"]
-albedo_color = Color(0.831373, 0.686275, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_d13ii"]
-material = SubResource("StandardMaterial3D_ryguw")
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_ig7tw")
@@ -183,25 +164,9 @@ autoplay = true
 [node name="Ball" parent="." instance=ExtResource("17_yaehf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.492057, 3.29997, -1.5954)
 
-[node name="Bees" type="Node3D" parent="."]
-script = ExtResource("21_getpj")
+[node name="Bees" parent="." instance=ExtResource("21_d13ii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.76746, -0.329033, -3.41546)
 
-[node name="left" type="MeshInstance3D" parent="Bees"]
-transform = Transform3D(0.1, 0, 0, 0, 0.01, 0, 0, 0, 0.15, -0.106995, 4.454, -0.00631473)
-mesh = SubResource("BoxMesh_ryguw")
-
-[node name="right" type="MeshInstance3D" parent="Bees"]
-transform = Transform3D(0.1, 0, 0, 0, 0.01, 0, 0, 0, 0.15, 0.102019, 4.454, -0.00631473)
-mesh = SubResource("BoxMesh_ryguw")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Bees"]
-transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.05, 0, 4.45378, -0.0286283)
-mesh = SubResource("BoxMesh_82xsv")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Bees"]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.2, 0, 4.454, 0)
-mesh = SubResource("BoxMesh_d13ii")
-
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="Bees"]
-transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.05, 0, 4.45378, 0.0472821)
-mesh = SubResource("BoxMesh_82xsv")
+[node name="BeeSpawner" type="Node3D" parent="."]
+script = ExtResource("22_1u8w0")
+bee_scene = ExtResource("21_d13ii")
