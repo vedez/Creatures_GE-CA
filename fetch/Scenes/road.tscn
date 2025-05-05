@@ -1,0 +1,89 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7nmpf2cav5ow"]
+
+[ext_resource type="PackedScene" uid="uid://ctx5ao8vi28tp" path="res://scenes/road_straight.tscn" id="1_bpeel"]
+[ext_resource type="PackedScene" uid="uid://df3jx1ls5h18o" path="res://scenes/road_corner_curved.tscn" id="3_ocm6w"]
+
+[node name="Road" type="Node3D"]
+
+[node name="Node3D4" type="Node3D" parent="."]
+
+[node name="road_straight" parent="Node3D4" instance=ExtResource("1_bpeel")]
+transform = Transform3D(0.0030893, 4.99999, 4.37113e-06, 0, -2.18557e-07, 100, 1.5, -0.0102977, -9.00251e-09, -0.0704459, 0.458511, -0.134872)
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="road_straight2" parent="Node3D" instance=ExtResource("1_bpeel")]
+transform = Transform3D(0.0030893, 5.99999, 4.37113e-06, 0, -2.62268e-07, 100, 1.5, -0.0123572, -9.00251e-09, 0.0616474, 0.458445, -0.135092)
+
+[node name="Node3D3" type="Node3D" parent="."]
+
+[node name="road_corner_curved2" parent="Node3D3" instance=ExtResource("3_ocm6w")]
+transform = Transform3D(1.78874e-08, 1.50001, 4.37114e-06, 0, -6.55673e-08, 100, 1.50001, -1.78874e-08, -5.21253e-14, 0.135244, 0.459, -0.135237)
+
+[node name="Node3D7" type="Node3D" parent="."]
+
+[node name="road_straight3" parent="Node3D7" instance=ExtResource("1_bpeel")]
+transform = Transform3D(1.5, 0, 0, 0, -2.18557e-07, 100, 0, -5, -4.37114e-06, 0.135181, 0.459, -0.0703351)
+
+[node name="Node3D5" type="Node3D" parent="."]
+
+[node name="road_straight4" parent="Node3D5" instance=ExtResource("1_bpeel")]
+transform = Transform3D(1.5, 0, 0, 0, -2.18557e-07, 100, 0, -5, -4.37114e-06, 0.134991, 0.459, 0.0296207)
+
+[node name="Node3D6" type="Node3D" parent="."]
+transform = Transform3D(0.0030893, 4.99999, 4.37113e-06, 0, -2.18557e-07, 100, 1.5, -0.0102977, -9.00251e-09, -0.0704459, 0.458511, -0.134872)
+
+[node name="road_corner_curved" parent="Node3D6" instance=ExtResource("3_ocm6w")]
+transform = Transform3D(0.0172604, 0.999849, 2.91365e-06, -0.299955, 0.00517814, -8.59138e-07, -6.55573e-10, -6.44354e-10, 1, 0.179953, 0.0410619, 4.88991e-06)
+
+[node name="Node3D8" type="Node3D" parent="."]
+
+[node name="road_straight5" parent="Node3D8" instance=ExtResource("1_bpeel")]
+transform = Transform3D(1.5, 0, 0, 0, -2.18557e-07, 100, 0, -5, -4.37114e-06, 0.135004, 0.459, 0.0718803)
+
+[node name="Node3D9" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, 2.32831e-10, 0, 1, 0, -2.98023e-08, 1.49012e-08)
+
+[node name="road_corner_curved2" parent="Node3D9" instance=ExtResource("3_ocm6w")]
+transform = Transform3D(1.49995, 0.0128804, 3.75346e-08, 0, -6.55671e-08, 100, 0.0128804, -1.49995, -4.37098e-06, -0.135417, 0.459, -0.134904)
+
+[node name="Node3D10" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, 2.32831e-10, 0, 1, 0, -2.98023e-08, 1.49012e-08)
+
+[node name="road_straight6" parent="Node3D10" instance=ExtResource("1_bpeel")]
+transform = Transform3D(1.5, 1.16415e-09, 1.01774e-15, 0, -2.18557e-07, 100, -3.49246e-10, -5, -4.37114e-06, -0.135309, 0.458511, 0.0699904)
+
+[node name="Node3D11" type="Node3D" parent="."]
+
+[node name="road_straight7" parent="Node3D11" instance=ExtResource("1_bpeel")]
+transform = Transform3D(1.5, 0, 0, 0, -2.18557e-07, 100, 0, -5, -4.37114e-06, -0.135598, 0.458511, -0.0712177)
+
+[node name="Node3D13" type="Node3D" parent="."]
+
+[node name="road_straight8" parent="Node3D13" instance=ExtResource("1_bpeel")]
+transform = Transform3D(-6.55672e-08, -5.00001, -4.37114e-06, 0, -2.18557e-07, 100, -1.5, 2.18557e-07, 1.91069e-13, -0.0709152, 0.458511, 0.134976)
+
+[node name="Node3D14" type="Node3D" parent="."]
+
+[node name="road_corner_curved2" parent="Node3D14" instance=ExtResource("3_ocm6w")]
+transform = Transform3D(-6.55673e-08, -1.50001, -4.37114e-06, 0, -6.55673e-08, 100, -1.50001, 6.55673e-08, 1.91069e-13, -0.135054, 0.459, 0.134976)
+
+[node name="Node3D15" type="Node3D" parent="."]
+
+[node name="road_straight" parent="Node3D15" instance=ExtResource("1_bpeel")]
+transform = Transform3D(0.0030893, 4.99999, 4.37113e-06, 0, -2.18557e-07, 100, 1.5, -0.0102977, -9.00251e-09, 0.00786576, 0.458511, 0.134938)
+
+[node name="Node3D16" type="Node3D" parent="."]
+
+[node name="road_straight9" parent="Node3D16" instance=ExtResource("1_bpeel")]
+transform = Transform3D(-6.55672e-08, -5.00001, -4.37114e-06, 0, -2.18557e-07, 100, -1.5, 2.18557e-07, 1.91069e-13, 0.0706539, 0.458511, 0.134976)
+
+[node name="Node3D2" type="Node3D" parent="."]
+
+[node name="road_straight" parent="Node3D2" instance=ExtResource("1_bpeel")]
+transform = Transform3D(0.0030893, 4.99999, 4.37113e-06, 0, -2.18557e-07, 100, 1.5, -0.0102977, -9.00251e-09, 0.00506664, 0.458511, -0.134872)
+
+[node name="Node3D12" type="Node3D" parent="."]
+
+[node name="road_straight" parent="Node3D12" instance=ExtResource("1_bpeel")]
+transform = Transform3D(-1.5, -4.37114e-07, -3.82137e-13, 0, -2.18557e-07, 100, -1.31134e-07, 5, 4.37114e-06, -0.135443, 0.458511, -0.00084953)

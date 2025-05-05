@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://peks2gh6i8nw"]
+
+[ext_resource type="PackedScene" uid="uid://bv3fwussjiawu" path="res://assets/models/Park Bench.glb" id="1_3f1fh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yj3it"]
+size = Vector3(4.9493, 2.44589, 4.22655)
+
+[node name="Bench" type="StaticBody3D"]
+
+[node name="Park Bench" parent="." instance=ExtResource("1_3f1fh")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0457112, -0.416472, -0.0204737)
+shape = SubResource("BoxShape3D_yj3it")

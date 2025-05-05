@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://q7ncylhtg1y7"]
+
+[ext_resource type="PackedScene" uid="uid://gkipwhhvnyf2" path="res://assets/models/Garden.glb" id="1_qx808"]
+
+[node name="Gardens" type="Node3D"]
+
+[node name="Garden" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 28.016, 0, 0)
+
+[node name="Garden2" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.443578, 0, -0.230735, 0, 0.5, 0, 0.230735, 0, 0.443578, 21.7151, 0, 12.1348)
+
+[node name="Garden3" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.480818, 0, -0.137164, 0, 0.5, 0, 0.137164, 0, 0.480818, 36.7779, 0, 25.7862)
+
+[node name="Garden4" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.363263, 0, -0.343569, 0, 0.5, 0, 0.343569, 0, 0.363263, 27.3898, 0, 35.727)
+
+[node name="Garden5" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -43.3439, 0, -3.972)
+
+[node name="Garden6" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -40.5105, 0, -5.19887)
+
+[node name="Garden8" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -34.6002, 0, -7.15246)
+
+[node name="Garden9" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -42.1552, 0, -39.5149)
+
+[node name="Garden11" parent="." instance=ExtResource("1_qx808")]
+transform = Transform3D(0.471687, 0, -0.165867, 0, 0.5, 0, 0.165867, 0, 0.471687, -36.2449, 0, -41.4685)

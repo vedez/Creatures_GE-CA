@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://df3jx1ls5h18o"]
 
-[ext_resource type="Texture2D" uid="uid://citdhi2i02a33" path="res://Models/roads_citybits_texture.png" id="1_c06g8"]
+[ext_resource type="Texture2D" uid="uid://qmk3vfpqq85t" path="res://assets/models/roads_citybits_texture.png" id="1_c06g8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w04l8"]
 resource_name = "citybits_texture"

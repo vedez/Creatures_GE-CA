@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://gxbn0iv54ykv"
+path="res://.godot/imported/City Park [Sound EffectAmbience].mp3-1ccbd165b46c865990d7033a07c7decf.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/City Park [Sound EffectAmbience].mp3"
+dest_files=["res://.godot/imported/City Park [Sound EffectAmbience].mp3-1ccbd165b46c865990d7033a07c7decf.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

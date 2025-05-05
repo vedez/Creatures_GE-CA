@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://pdk2fqpmv3uo"]
+
+[ext_resource type="PackedScene" uid="uid://tclvxovhiomh" path="res://assets/models/Cumulus Clouds 2.glb" id="1_b3oxr"]
+[ext_resource type="PackedScene" uid="uid://dtsdu683svrxh" path="res://assets/models/Cumulus Clouds6.glb" id="2_qaedo"]
+
+[node name="Cloud" type="Node3D"]
+
+[node name="Cumulus Clouds 2" parent="." instance=ExtResource("1_b3oxr")]
+transform = Transform3D(20, 0, 0, 0, -25, 1.74846e-06, 0, -2.18557e-06, -20, 104.821, 102.477, -59.6622)
+
+[node name="Cumulus Clouds6" parent="." instance=ExtResource("2_qaedo")]
+transform = Transform3D(-19.9603, 0.307625, -1.24228, -0.206923, -29.9984, 0.0231926, -1.24197, 0.0539991, 19.9614, -35.2875, 68.9503, 30.4936)
+
+[node name="Cumulus Clouds 3" parent="." instance=ExtResource("1_b3oxr")]
+transform = Transform3D(10.5272, 1.8583e-06, 17.0052, 0, -25, 1.74846e-06, 17.0052, -1.1504e-06, -10.5272, 25.9258, 81.9489, 78.6476)
+
+[node name="Cumulus Clouds 4" parent="." instance=ExtResource("1_b3oxr")]
+transform = Transform3D(-20, 2.18557e-06, 0, -1.74846e-06, -25, 0, 0, 0, 20, -72.8776, 103.26, -48.6798)
+
+[node name="Cumulus Clouds7" parent="." instance=ExtResource("2_qaedo")]
+transform = Transform3D(-13.7424, 0.188008, -14.5303, -0.206923, -29.9984, 0.0231926, -14.5294, 0.249404, 13.743, 69.6789, 84.2417, 5.01828)
+
+[node name="Cumulus Clouds8" parent="." instance=ExtResource("2_qaedo")]
+transform = Transform3D(-14.686, 0.204313, -13.5758, -0.206923, -29.9984, 0.0231926, -13.5749, 0.236232, 14.6866, 1.35223, 92.2567, -72.6375)
+
+[node name="Cumulus Clouds 5" parent="." instance=ExtResource("1_b3oxr")]
+transform = Transform3D(20, 0, 0, 0, -25, 1.74846e-06, 0, -2.18557e-06, -20, -84.489, 65.3275, 99.0215)
+
+[node name="Cumulus Clouds 6" parent="." instance=ExtResource("1_b3oxr")]
+transform = Transform3D(17.6906, -3.20076e-06, -14.1318, 0, -30, 3.01992e-06, -17.6647, -3.20545e-06, -14.1525, -30.0973, 133.242, 25.9581)
