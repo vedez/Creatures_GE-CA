@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://dxel7xjoy4iqs"]
+[gd_scene load_steps=27 format=3 uid="uid://dxel7xjoy4iqs"]
 
 [ext_resource type="Script" uid="uid://bsgxpnhcryak1" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://dq8o0yk4fd7ew" path="res://setup.tscn" id="2_lquwl"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://csl01qfn28wln" path="res://park.tscn" id="4_272bh"]
 [ext_resource type="PackedScene" uid="uid://bxi7quymusqu0" path="res://fence.tscn" id="5_5vw27"]
 [ext_resource type="PackedScene" uid="uid://bfrdibn0exeuo" path="res://Models/Gazebo.glb" id="5_ycdy4"]
-[ext_resource type="PackedScene" uid="uid://cgm0la1xen1mt" path="res://tree.tscn" id="6_7mycd"]
 [ext_resource type="PackedScene" uid="uid://c5aqydelx2edl" path="res://light.tscn" id="6_w48qg"]
 [ext_resource type="PackedScene" uid="uid://cacd4hpn37rth" path="res://Models/Pond.glb" id="9_vivmo"]
 [ext_resource type="PackedScene" uid="uid://pdk2fqpmv3uo" path="res://cloud.tscn" id="10_2cqfq"]
@@ -19,6 +18,8 @@
 [ext_resource type="AudioStream" uid="uid://gxbn0iv54ykv" path="res://Sound/City Park [Sound EffectAmbience].mp3" id="15_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dmur27y5f5yb2" path="res://Models/Red Car.glb" id="16_82xsv"]
 [ext_resource type="PackedScene" uid="uid://dfb8v7nhxifqh" path="res://ball.tscn" id="17_yaehf"]
+[ext_resource type="PackedScene" uid="uid://hd80btteeoai" path="res://tree-1.tscn" id="20_getpj"]
+[ext_resource type="PackedScene" uid="uid://d03h05pebd1fd" path="res://tree-2.tscn" id="21_ryguw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_cegan"]
 
@@ -53,55 +54,97 @@ script = ExtResource("1_ig7tw")
 
 [node name="Park" parent="Map" instance=ExtResource("4_272bh")]
 
-[node name="Others" type="Node3D" parent="Map"]
+[node name="Environment" type="Node3D" parent="Map"]
 
-[node name="Gazebo" parent="Map/Others" instance=ExtResource("5_ycdy4")]
+[node name="Gazebo" parent="Map/Environment" instance=ExtResource("5_ycdy4")]
 transform = Transform3D(1.53838, 0, -1.27805, 0, 2, 0, 1.27805, 0, 1.53838, -39.543, 0.942222, 12.5002)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Others/Gazebo"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Environment/Gazebo"]
 transform = Transform3D(0.384593, 0, 0.319511, 0, 0.5, 0, -0.319511, 0, 0.384593, 11.214, -0.471111, -17.4419)
 
-[node name="Gazebo2" type="Node3D" parent="Map/Others/Gazebo/StaticBody3D"]
+[node name="Gazebo2" type="Node3D" parent="Map/Environment/Gazebo/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0460939, 0.105317, 0.0653409)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Others/Gazebo/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Environment/Gazebo/StaticBody3D"]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -39.2032, 5.19557, 12.6907)
 shape = SubResource("SphereShape3D_cegan")
 
-[node name="Light" parent="Map/Others" instance=ExtResource("6_w48qg")]
+[node name="Light" parent="Map/Environment" instance=ExtResource("6_w48qg")]
 transform = Transform3D(3, 0, 0, 0, 3.5, 0, 0, 0, 3, 0, 0.594707, 57.9525)
 
-[node name="Fence" parent="Map/Others" instance=ExtResource("5_5vw27")]
+[node name="Fence" parent="Map/Environment" instance=ExtResource("5_5vw27")]
 transform = Transform3D(1.011, 0, 0, 0, 3, 0, 0, 0, 1, -31.1, 0, -49.6)
 
-[node name="Tree" parent="Map/Others" instance=ExtResource("6_7mycd")]
-transform = Transform3D(3, 0, 0, 0, 3.5, 0, 0, 0, 3, -0.193253, 13.9877, 0.108181)
-
-[node name="Pond" parent="Map/Others" instance=ExtResource("9_vivmo")]
+[node name="Pond" parent="Map/Environment" instance=ExtResource("9_vivmo")]
 transform = Transform3D(0.669879, 0, 9.97754, 0, 7, 0, -9.97754, 0, 0.669879, -35.4108, 1.6, -23.0273)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Others/Pond"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Environment/Pond"]
 transform = Transform3D(1.61902, 0, 0.396453, 0, 0.01, 0, -0.518439, 0, 1.23807, 0.100668, -0.100464, 0.0237613)
 mesh = SubResource("SphereMesh_getpj")
 
-[node name="Cloud" parent="Map/Others" instance=ExtResource("10_2cqfq")]
+[node name="Cloud" parent="Map/Environment" instance=ExtResource("10_2cqfq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 70.7184, 0)
 script = ExtResource("11_2cqfq")
 
-[node name="Benches" parent="Map/Others" instance=ExtResource("11_yaehf")]
+[node name="Benches" parent="Map/Environment" instance=ExtResource("11_yaehf")]
 
-[node name="flowers" parent="Map/Others" instance=ExtResource("12_074og")]
+[node name="flowers" parent="Map/Environment" instance=ExtResource("12_074og")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0724401, 0)
 
-[node name="Grass" parent="Map/Others" instance=ExtResource("13_cegan")]
+[node name="Grass" parent="Map/Environment" instance=ExtResource("13_cegan")]
 
-[node name="Cars" type="Node3D" parent="Map/Others"]
+[node name="Cars" type="Node3D" parent="Map/Environment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0419731, -0.0868797, -0.00762939)
 
-[node name="Car2" parent="Map/Others/Cars" instance=ExtResource("15_cegan")]
+[node name="Car2" parent="Map/Environment/Cars" instance=ExtResource("15_cegan")]
 transform = Transform3D(-4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, 51.8426, 0.0868797, -69.8483)
 
-[node name="Red Car" parent="Map/Others/Cars" instance=ExtResource("16_82xsv")]
+[node name="Red Car" parent="Map/Environment/Cars" instance=ExtResource("16_82xsv")]
 transform = Transform3D(5, 0, 0, 0, 6, 0, 0, 0, 5, -70.2398, 1.54345, -12.6045)
+
+[node name="Trees" type="Node" parent="Map/Environment"]
+
+[node name="Tree" parent="Map/Environment/Trees" instance=ExtResource("20_getpj")]
+transform = Transform3D(-0.398461, 0, -0.917185, 0, 1, 0, 0.917185, 0, -0.398461, 23.6139, 13.2064, -4.83782)
+
+[node name="Tree2" parent="Map/Environment/Trees" instance=ExtResource("20_getpj")]
+transform = Transform3D(-0.398461, 0, -0.917185, 0, 1, 0, 0.917185, 0, -0.398461, 36.608, 13.2064, 11.7859)
+
+[node name="Tree3" parent="Map/Environment/Trees" instance=ExtResource("20_getpj")]
+transform = Transform3D(-0.436158, 0, -0.89987, 0, 1, 0, 0.89987, 0, -0.436158, 44.8722, 13.2064, 44.565)
+
+[node name="Tree4" parent="Map/Environment/Trees" instance=ExtResource("20_getpj")]
+transform = Transform3D(0.785133, 0, -0.619327, 0, 1, 0, 0.619327, 0, 0.785133, -33.6911, 13.2064, 44.1606)
+
+[node name="Tree5" parent="Map/Environment/Trees" instance=ExtResource("20_getpj")]
+transform = Transform3D(-0.34202, 0, -0.939693, 0, 1, 0, 0.939693, 0, -0.34202, -46.4502, 13.2459, -0.317094)
+
+[node name="Tree6" parent="Map/Environment/Trees" instance=ExtResource("20_getpj")]
+transform = Transform3D(0.118993, 0, -0.992895, 0, 1, 0, 0.992895, 0, 0.118993, -28.2029, 13.2459, -37.0762)
+
+[node name="Tree7" parent="Map/Environment/Trees" instance=ExtResource("20_getpj")]
+transform = Transform3D(0.337358, 0, -0.941376, 0, 1, 0, 0.941376, 0, 0.337358, 33.9658, 13.2459, -44.9296)
+
+[node name="Tree8" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9696, 12.8049, -35.9426)
+
+[node name="Tree9" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.8157, 12.8049, -43.6118)
+
+[node name="Tree10" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
+transform = Transform3D(-0.946215, 0, 0.323538, 0, 1, 0, -0.323538, 0, -0.946215, -38.8658, 12.8049, -10.8144)
+
+[node name="Tree11" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
+transform = Transform3D(0.628995, 0, 0.777409, 0, 1, 0, -0.777409, 0, 0.628995, -44.8079, 12.8049, 31.0554)
+
+[node name="Tree12" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
+transform = Transform3D(-0.968544, 0, 0.248842, 0, 1, 0, -0.248842, 0, -0.968544, -14.4342, 12.6196, 36.4417)
+
+[node name="Tree13" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
+transform = Transform3D(-0.968544, 0, 0.248842, 0, 1, 0, -0.248842, 0, -0.968544, 26.3592, 12.6196, 34.8084)
+
+[node name="Tree14" parent="Map/Environment/Trees" instance=ExtResource("21_ryguw")]
+transform = Transform3D(-0.567959, 0, -0.823057, 0, 1, 0, 0.823057, 0, -0.567959, 47.1446, 12.6196, 15.329)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1bvp3")
