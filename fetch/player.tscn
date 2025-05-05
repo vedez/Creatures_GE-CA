@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://btgm5dfnob5ct"]
+[gd_scene load_steps=5 format=3 uid="uid://b4de0gcgvod6"]
 
 [ext_resource type="PackedScene" uid="uid://hbegjmtr17i4" path="res://assets/lopwoly_rigged_hand_in_psxps1_style.glb" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://cq5y2qicu1lad" path="res://player.gd" id="1_i3pqv"]
+[ext_resource type="Script" path="res://player.gd" id="1_i3pqv"]
 [ext_resource type="Script" uid="uid://yop72jnt851d" path="res://grabber.gd" id="1_onrkg"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_onrkg"]
