@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bgpins3nmvqy7" path="res://Models/Tree-1.glb" id="1_6pj0r"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mh8xw"]
-radius = 2.0
+radius = 1.8
 height = 15.0
 
 [node name="StaticBody3D" type="StaticBody3D"]
