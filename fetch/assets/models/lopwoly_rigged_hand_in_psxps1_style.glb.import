@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bnkg15jbi6hig"
-path="res://.godot/imported/Tennis ball.glb-2c96a9668cdbfb79ffe971216745dad6.scn"
+uid="uid://hbegjmtr17i4"
+path="res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style.glb-0c2f694d8bccf088561addcf1e6f7e7e.scn"
 
 [deps]
 
-source_file="res://assets/Tennis ball.glb"
-dest_files=["res://.godot/imported/Tennis ball.glb-2c96a9668cdbfb79ffe971216745dad6.scn"]
+source_file="res://assets/models/lopwoly_rigged_hand_in_psxps1_style.glb"
+dest_files=["res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style.glb-0c2f694d8bccf088561addcf1e6f7e7e.scn"]
 
 [params]
 

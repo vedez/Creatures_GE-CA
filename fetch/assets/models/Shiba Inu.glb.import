@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://hbegjmtr17i4"
-path="res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style.glb-1eb3e79cf10b227db182553508850d7b.scn"
+uid="uid://ccrlo7tkego2e"
+path="res://.godot/imported/Shiba Inu.glb-fda5b129dc3ce9313f0fa216aa3ff85c.scn"
 
 [deps]
 
-source_file="res://assets/lopwoly_rigged_hand_in_psxps1_style.glb"
-dest_files=["res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style.glb-1eb3e79cf10b227db182553508850d7b.scn"]
+source_file="res://assets/models/Shiba Inu.glb"
+dest_files=["res://.godot/imported/Shiba Inu.glb-fda5b129dc3ce9313f0fa216aa3ff85c.scn"]
 
 [params]
 

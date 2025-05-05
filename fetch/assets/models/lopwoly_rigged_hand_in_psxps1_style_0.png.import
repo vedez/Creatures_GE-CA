@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hfubs8ccv3c"
-path.s3tc="res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-bd34d78c8b84c938612f3e51586a01d9.s3tc.ctex"
-path.etc2="res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-bd34d78c8b84c938612f3e51586a01d9.etc2.ctex"
+path.s3tc="res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-0b809d9acfaf7131fff8a8ed751b41a2.s3tc.ctex"
+path.etc2="res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-0b809d9acfaf7131fff8a8ed751b41a2.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -15,8 +15,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://assets/lopwoly_rigged_hand_in_psxps1_style_0.png"
-dest_files=["res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-bd34d78c8b84c938612f3e51586a01d9.s3tc.ctex", "res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-bd34d78c8b84c938612f3e51586a01d9.etc2.ctex"]
+source_file="res://assets/models/lopwoly_rigged_hand_in_psxps1_style_0.png"
+dest_files=["res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-0b809d9acfaf7131fff8a8ed751b41a2.s3tc.ctex", "res://.godot/imported/lopwoly_rigged_hand_in_psxps1_style_0.png-0b809d9acfaf7131fff8a8ed751b41a2.etc2.ctex"]
 
 [params]
 

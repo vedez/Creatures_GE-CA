@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=4 uid="uid://dfb8v7nhxifqh"]
+[gd_scene load_steps=8 format=4 uid="uid://dfb8v7nhxifqh"]
 
-[ext_resource type="Texture2D" uid="uid://cdul6bbflwoce" path="res://assets/Tennis ball_DefaultMaterial_Base_Color.png" id="1_x8fbi"]
+[ext_resource type="Script" uid="uid://bhopwekpkm5l4" path="res://scripts/ball.gd" id="1_cxlvu"]
+[ext_resource type="Texture2D" uid="uid://cdul6bbflwoce" path="res://assets/models/Tennis ball_DefaultMaterial_Base_Color.png" id="1_x8fbi"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cbx31"]
 friction = 2.5
@@ -55,6 +56,7 @@ physics_material_override = SubResource("PhysicsMaterial_cbx31")
 continuous_cd = true
 linear_damp = 0.2
 angular_damp = 3.0
+script = ExtResource("1_cxlvu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_cbx31")

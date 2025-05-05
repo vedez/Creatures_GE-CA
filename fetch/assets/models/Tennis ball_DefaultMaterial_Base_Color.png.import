@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdul6bbflwoce"
-path.s3tc="res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-454bd2e855929dba37ebe7d2e60cc7e7.s3tc.ctex"
-path.etc2="res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-454bd2e855929dba37ebe7d2e60cc7e7.etc2.ctex"
+path.s3tc="res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-4ae9e5870b9574e852612b816845c3c4.s3tc.ctex"
+path.etc2="res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-4ae9e5870b9574e852612b816845c3c4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -15,8 +15,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://assets/Tennis ball_DefaultMaterial_Base_Color.png"
-dest_files=["res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-454bd2e855929dba37ebe7d2e60cc7e7.s3tc.ctex", "res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-454bd2e855929dba37ebe7d2e60cc7e7.etc2.ctex"]
+source_file="res://assets/models/Tennis ball_DefaultMaterial_Base_Color.png"
+dest_files=["res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-4ae9e5870b9574e852612b816845c3c4.s3tc.ctex", "res://.godot/imported/Tennis ball_DefaultMaterial_Base_Color.png-4ae9e5870b9574e852612b816845c3c4.etc2.ctex"]
 
 [params]
 

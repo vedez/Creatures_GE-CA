@@ -1,16 +1,16 @@
 extends Node3D
 
-# === CONFIGURABLE SETTINGS ===
+# Configs
 @export var speed: float = 5.0
 @export var wall_thickness: float = 10.0
 @export var steer_strength: float = 0.5
 @export var facing_offset_degrees := 0.0
 @export var min_flight_y: float = 2.5
-@export var max_flight_y: float = 7.0
+@export var max_flight_y: float = 15
 @export var flower_cooldown_min: float = 15.0
 @export var flower_cooldown_max: float = 30.0
 
-# === INTERNAL STATE ===
+# Internals
 var velocity = Vector3.ZERO
 var change_timer := 0.0
 var change_interval := 1.5
@@ -21,10 +21,10 @@ var vertical_interval := 2.5
 var wing_angle := 0.0
 
 # Bounds
-const BOUNDS_MIN_X := -50.0
-const BOUNDS_MAX_X :=  50.0
-const BOUNDS_MIN_Z := -50.0
-const BOUNDS_MAX_Z :=  50.0
+const BOUNDS_MIN_X := -60.0
+const BOUNDS_MAX_X :=  60.0
+const BOUNDS_MIN_Z := -60.0
+const BOUNDS_MAX_Z :=  60.0
 
 # Flower logic
 var is_targeting_flower := false
@@ -33,6 +33,8 @@ var hovering := false
 var hover_time := 5.0
 var hover_timer := 0.0
 var flower_cooldown := 0.0
+var _pre_hover_min_y := 0.0
+var _pre_hover_max_y := 0.0
 
 # Anti-stuck logic
 var stuck_timer := 0.0
@@ -119,6 +121,8 @@ func _physics_process(delta):
 			hovering = false
 			is_targeting_flower = false
 			target_flower = null
+			min_flight_y = _pre_hover_min_y
+			max_flight_y = _pre_hover_max_y
 			vertical_target = randf_range(min_flight_y, max_flight_y)
 
 		global_transform.origin = pos
@@ -141,6 +145,9 @@ func _physics_process(delta):
 		var to_target = (target_pos - pos).normalized()
 		velocity = lerp(velocity, to_target, delta * 2.0)
 
+		# Lower altitude gently as approaching
+		vertical_target = clamp(target_pos.y + 0.8, min_flight_y, max_flight_y)
+
 		# Stuck detection
 		var current_pos_2d = Vector2(pos.x, pos.z)
 		if current_pos_2d.distance_to(last_check_pos) < STUCK_DISTANCE_THRESHOLD:
@@ -154,12 +161,15 @@ func _physics_process(delta):
 			stuck_timer = 0.0
 			last_check_pos = current_pos_2d
 
-		# Begin hovering when close
 		var horizontal_dist = Vector2(pos.x, pos.z).distance_to(Vector2(target_pos.x, target_pos.z))
 		if horizontal_dist < 1.0 and not hovering:
 			hovering = true
 			hover_timer = hover_time
-			vertical_target = -0.5  # move low near flower
+			_pre_hover_min_y = min_flight_y
+			_pre_hover_max_y = max_flight_y
+			min_flight_y = target_pos.y + 0.5
+			max_flight_y = target_pos.y + 1.0
+			vertical_target = randf_range(min_flight_y, max_flight_y)
 	else:
 		# Wandering
 		change_timer -= delta
@@ -234,7 +244,7 @@ func _update_debug():
 
 		# Prediction
 		if is_targeting_flower and target_flower:
-			draw_line(global_transform.origin, target_flower.global_transform.origin, prediction_line, Color.CYAN)
+			draw_line(global_transform.origin, target_flower.global_transform.origin, prediction_line, Color.RED)
 		else:
 			prediction_line.mesh = null
 	else:

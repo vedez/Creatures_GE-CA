@@ -73,7 +73,9 @@ func release():
 		throw_velocity = throw_velocity.normalized() * max_speed
 
 	held_object.linear_velocity = throw_velocity
-
 	held_object.angular_velocity = angular_velocity
+	
+	if held_object.has_method("mark_as_thrown"):
+		held_object.call("mark_as_thrown")
 
 	held_object = null
