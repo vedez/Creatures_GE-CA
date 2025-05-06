@@ -27,6 +27,10 @@ ButterflyManager="*res://scripts/butterfly_manager.gd"
 
 enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
 
+[navigation]
+
+3d/merge_rasterizer_cell_scale=0.001
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
