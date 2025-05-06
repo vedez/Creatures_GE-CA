@@ -131,6 +131,7 @@ func _physics_process(delta):
 				current_speed = base_speed
 				wandering = true  # Resume wander mode
 				var idle_choice = ["Idle", "Idle_2", "Idle_2_HeadLow", "Attack"].pick_random()
+				$BarkPlayer.play()
 				anim_player.play(idle_choice)
 				debug_state = "Idle"
 				return

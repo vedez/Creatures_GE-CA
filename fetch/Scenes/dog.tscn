@@ -1,6 +1,7 @@
-[gd_scene load_steps=35 format=4 uid="uid://cp0icgb8e7by6"]
+[gd_scene load_steps=36 format=4 uid="uid://cp0icgb8e7by6"]
 
 [ext_resource type="Script" uid="uid://cn3xrcd7v8ksk" path="res://scripts/dog.gd" id="1_on80e"]
+[ext_resource type="AudioStream" uid="uid://b3fdk6s3rakmx" path="res://assets/sounds/bark.mp3" id="2_vwjdu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a8ys8"]
 resource_name = "Main"
@@ -8954,3 +8955,6 @@ libraries = {
 }
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="BarkPlayer" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_vwjdu")
