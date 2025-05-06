@@ -2,7 +2,7 @@
 
 [![YouTube](https://i9.ytimg.com/vi_webp/Y4RtF7oKL8A/mq2.webp?sqp=CMig5sAG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgLCh_MA8=&rs=AOn4CLC-QBAV1DVmLWi0A9wY6tnapbXvVg)](https://www.youtube.com/watch?v=Y4RtF7oKL8A)
 
-> *A peaceful VR experience with your loyal dog companion*
+> *Click image to view video of Fetch - A peaceful VR experience with your loyal dog companion*
 
 **Creator:** Lovely Fernandez (C20305696)  
 **Class:** TU858-4  
