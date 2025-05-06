@@ -1,6 +1,6 @@
 # Fetch
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+[![YouTube](https://i9.ytimg.com/vi/Y4RtF7oKL8A/mqdefault.jpg)](https://www.youtube.com/watch?v=Y4RtF7oKL8A)
 
 > *A peaceful VR experience with your loyal dog companion*
 
